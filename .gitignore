@@ -1,9 +1,10 @@
 # Visual Studio Code
 .vscode/
+.vs/
 *.vscode/
 *.code-workspace
 
-# Arquivos temporários e gerados automaticamente
+# Arquivos temporÃ¡rios e gerados automaticamente
 node_modules/
 npm-debug.log*
 yarn-debug.log*
@@ -14,11 +15,11 @@ Thumbs.db
 ehthumbs.db
 Desktop.ini
 
-# Dependências geradas automaticamente
+# DependÃªncias geradas automaticamente
 package-lock.json
 yarn.lock
 
-# Arquivos e diretórios de build
+# Arquivos e diretÃ³rios de build
 dist/
 build/
 lib/
