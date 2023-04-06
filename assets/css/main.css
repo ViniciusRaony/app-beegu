@@ -15,3 +15,11 @@ border-color: #563c4a;
 .form-container a {
     color: black;
 }
+
+h1 {
+    font-family: 'Baloo Bhai', cursive;
+    color: #4C2F47;
+    font-size: 64px;
+    margin-top: 70px;
+    margin-bottom: 100px;    
+}
