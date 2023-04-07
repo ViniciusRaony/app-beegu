@@ -2,6 +2,7 @@ body {
     background-color: #fedf00;
 }
 
+
 .btn-my-color {
 background-color: #674461;
 border-color: #674461;
@@ -22,4 +23,34 @@ h1 {
     font-size: 64px;
     margin-top: 70px;
     margin-bottom: 100px;    
+}
+
+.password-reset{
+    font-family: 'Baloo Bhai', cursive;
+    color: #4C2F47;
+    font-size: 20px;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+
+.img-background {
+width: 600px;
+height: 1000px;
+display: block;
+position: fixed;
+top: 50px;
+left: 100px;
+bottom: 30px;
+}
+  
+.img-background::after {
+content: "";
+background: url(../img/mascote-medium.png) no-repeat;
+opacity: 0.1;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+position: absolute;
+z-index: -1;   
 }
