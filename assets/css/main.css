@@ -100,5 +100,25 @@ label {
 }
 
 .list-group {
-    margin-top: 2.75rem;
+    margin-top: 0.75rem;
+}
+
+h3 {
+    font-family: 'Baloo Bhai', cursive;
+    color: #4C2F47;
+    margin-top: 1.75rem;
+}
+
+iframe {
+    border: 1px solid #674461;
+    border-radius: 5px;
+    margin-top: 0.75rem;
+}
+
+.btn {
+    display: inline-block;
+}
+
+i {
+    margin-right: 15px;
 }
