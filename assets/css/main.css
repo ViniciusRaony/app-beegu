@@ -3,8 +3,22 @@ body {
 }
 
 .btn-my-color {
-    background-color: #674461;
+    background-color: rgb(103, 68, 97);
     border-color: #674461;
+}
+
+.letter-color {    
+    color: #674461;
+    font-family: 'Baloo Bhai', cursive;    
+    font-size: 1.5rem;  
+}
+
+.teste {
+    color: #674461;
+}
+
+.text-primary, .navbar-toggler{    
+    color: rgba(103, 68, 97, 1) !important;
 }
 
 .btn-my-color:hover {
@@ -53,3 +67,19 @@ h1 {
     right: 0;
     position: absolute;
 }
+
+.navbar-toggler:focus, .navbar-toggler:hover, .navbar-toggler:not(.collapsed), .offcanvas.show {
+border: none;
+outline: none;
+box-shadow: none;
+}
+  
+.bg-white {
+    background-color: #fff;
+    display: 100vh;
+}
+
+.bg-yellow {
+    background-color: #fedf00;
+}
+
