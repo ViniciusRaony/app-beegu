@@ -21,53 +21,52 @@
 
 </head>
 
-<body>
+<body class="bg-yellow">
     <div class="img-background"></div>
 
-    <div class="d-flex justify-content-center">
-        <h1>Atualizar cadastro</h1>
-    </div>
+    <main class="container">
+        <!-- Form atualizar dados -->
+        <div class="row d-flex justify-content-center">
+            <div class="col-10">
+                <h2>Atualizar cadastro</h2>
 
-    <!-- Form Criar conta -->
-    <div class="form-container d-flex justify-content-center row">
-        <form class="col-3">
-
-            <div class="mb-3">
-                <label for="exampleInputName" class="form-label">Nome completo</label>
-                <input type="text" placeholder="Nome" class="input-group form-control rounded-pill"
-                    id="exampleInputName">
+                <form class="form-container">
+                    <div class="mb-3">
+                        <label for="exampleInputName" class="form-label">Nome completo</label>
+                        <input type="text" placeholder="Nome" class="input-group form-control rounded-pill"
+                            id="exampleInputName">
+                    </div>
+        
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email</label>
+                        <input type="email" placeholder="email@example.com" class="input-group form-control rounded-pill"
+                            id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+        
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Senha</label>
+                        <input type="password" placeholder="Password" class="form-control rounded-pill"
+                            id="exampleInputPassword1">
+                    </div>
+        
+                    <div class="mb-3">
+                        <label for="exampleInputPassword2" class="form-label">Confirmar senha</label>
+                        <input type="password" placeholder="Password" class="form-control rounded-pill"
+                            id="exampleInputPassword2">
+                    </div>
+        
+                    <div class="d-flex justify-content-center mt-5">
+                        <a href="index.html"><button type="button"
+                                class="btn btn-primary btn-my-color px-4">Atualizar</button></a>
+                    </div>
+        
+                    <div class="d-flex justify-content-center mt-3">
+                        <a href="index.html" class="btn btn-link">Voltar</a>
+                    </div>
+                </form>
             </div>
-
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email</label>
-                <input type="email" placeholder="email@example.com" class="input-group form-control rounded-pill"
-                    id="exampleInputEmail1" aria-describedby="emailHelp">
-            </div>
-
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Senha</label>
-                <input type="password" placeholder="Password" class="form-control rounded-pill"
-                    id="exampleInputPassword1">
-            </div>
-
-            <div class="mb-3">
-                <label for="exampleInputPassword2" class="form-label">Confirmar senha</label>
-                <input type="password" placeholder="Password" class="form-control rounded-pill"
-                    id="exampleInputPassword2">
-            </div>
-
-            <div class="d-flex justify-content-center mt-5">
-                <a href="index.html"><button type="button"
-                        class="btn btn-primary btn-my-color px-4">Atualizar</button></a>
-            </div>
-
-            <div class="d-flex justify-content-center mt-3">
-                <a href="index.html" class="btn btn-link">Voltar</a>
-            </div>
-
-        </form>
-    </div>
-
+        </div><!--"row d-flex justify-content-center"-->
+    </main>
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"

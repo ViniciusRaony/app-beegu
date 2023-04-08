@@ -56,12 +56,32 @@ h1 {
     margin-bottom: 100px;
 }
 
-.password-reset {
+h2 {
     font-family: 'Baloo Bhai', cursive;
     color: #4C2F47;
-    font-size: 20px;
+    font-size: 52px;
     margin-top: 70px;
+    margin-bottom: 80px;
+}
+
+.password-reset {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #4C2F47;
+    font-size: 1rem;
+    margin-top: 50px;
     margin-bottom: 100px;
+}
+
+.form-label {
+    font-family: 'Baloo Bhai', cursive;
+    color: #4C2F47;
+    font-size: 1.25rem;
+}
+
+.form-check-input, .form-check-label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #4C2F47;
+    font-size: 0.95rem;
 }
 
 /*home*/
@@ -88,11 +108,11 @@ header {
     background-color: #fedf00;
 }
 
-label {
+.destino-label {
     font-family: 'Baloo Bhai', cursive;
     color: #4C2F47;
     font-size: 1.75rem;
-    margin-top: 1.75rem;
+    margin-top: 2rem;
 }
 
 .input-group{
@@ -106,7 +126,7 @@ label {
 h3 {
     font-family: 'Baloo Bhai', cursive;
     color: #4C2F47;
-    margin-top: 1.75rem;
+    margin-top: 2rem;
 }
 
 iframe {
