@@ -23,7 +23,7 @@
     <link rel="manifest" href="manifest.json">
 
     <!--Google API-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=${{ secrets.GOOGLE_MAPS_API_KEY }}&callback=initMap"
+    <script src="https://maps.googleapis.com/maps/api/js?key=${process.env.GOOGLE_MAPS_API_KEY}&callback=initMap"
     async defer></script>
     <script src="assets/js/main.js"></script>    
 
