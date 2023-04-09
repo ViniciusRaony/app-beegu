@@ -129,10 +129,15 @@ h3 {
     margin-top: 2rem;
 }
 
-iframe {
+.map-nav-label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #4C2F47;
+    margin-top: 0.5rem;
+}
+
+.map {
     border: 1px solid #674461;
     border-radius: 5px;
-    margin-top: 0.75rem;
 }
 
 .btn {
