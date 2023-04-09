@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width" , inicial-scale="1.0">
     <link rel="shortcut icon" href="./assets/img/mascote-small.png">
-    <title>Home</title>
+    <title>Home-M</title>
 
     <!--Theme Color-->
     <meta name="theme-color" content="#fedf00"/>
@@ -66,10 +66,10 @@
                                 <a class="nav-link text-light" href="favorite.html">Favoritos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-light" href="history.html">Histórico</a>
+                                <a class="nav-link text-light" href="historic.html">Histórico</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-light" href="help.html">Ajuda</a>
+                                <a class="nav-link text-light" href="history.html">Ajuda</a>
                             </li>
                         </ul>
                     </div>
@@ -83,20 +83,38 @@
     <main class="container">
         <div class="row d-flex justify-content-center">
             <div class="col-10">
-                <!--Tela 1-->
-                <label class="destino-label" for="destino">Para onde estou indo?</label>
-                <div class="input-group no-wrap">
-                    <input id="destino" type="text" class="form-control rounded-pill" placeholder="Insira um destino"
-                        aria-label="Destino" aria-describedby="addon-wrapping">
-                    <span class="btn rounded-pill" id="addon-wrapping"><i class="bi bi-search"></i>
+                <!--Tela 2-->
+                <div class="justify-content-md-start">
+                    <a href="home.html"><button type="button" class="btn btn-primary btn-my-color rounded-circle"><i class="bi bi-arrow-left"></i></button></a>
                 </div>
 
-                <h3>Destinos favoritos</h3>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item bg-transparent text-center"><a class="list-link" href="home-mapa.html">Destino 1</a></li>
-                    <li class="list-group-item bg-transparent text-center"><a class="list-link" href="home-mapa.html">Destino 2</a></li>
-                    <li class="list-group-item bg-transparent text-center"><a class="list-link" href="home-mapa.html">Destino 3</a></li>
-                </ul>
+                <!--Carrega mapa-->
+                <h3>Destino 123</h3>
+                <div class="map-nav mt-3">
+                    <label class="map-nav-label" for="start">Início: </label>
+                    <input id="start" type="text" class="form-control rounded-pill" placeholder="Digite o endereço de início" aria-label="Início">
+
+                    <label class="map-nav-label" for="end">Destino: </label>
+                    <input id="end" type="text" class="form-control rounded-pill" placeholder="Digite o endereço de destino" aria-label="Destino">
+                  
+                    <div class="d-flex justify-content-end mt-3">
+                        <button class="btn btn-primary btn-my-color mt-2" onclick="buscarRotas()"><i class="bi bi-geo-alt-fill"></i> Buscar rotas</button>
+                    </div>
+                </div>
+            
+                <div class="map mt-5" id="map" style="width: 100%; height: 500px;"></div>
+
+                <script>
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 15,
+                        center: {lat: -8.0539, lng: -34.8811}
+                    });
+                </script>
+
+                <div class="d-grid gap-2 d-flex justify-content-end my-5">
+                    <a href="#"><button type="button" class="btn btn-primary btn-my-color"><i class="bi bi-hand-thumbs-up-fill mr-3"></i> Buscar carona</button></a>
+                    <a href="#"><button type="button" class="btn btn-primary btn-my-color"><i class="bi bi-car-front-fill mr-3"></i> Criar carona</button></a>
+                </div>
             </div>
         </div>
     </main>
