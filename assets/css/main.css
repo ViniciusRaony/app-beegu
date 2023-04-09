@@ -33,15 +33,15 @@ body {
     border-color: #674461;
 }
 
+.btn-my-color:hover, .btn-my-color:active {
+    background-color: #563c4a !important;
+    border-color: #563c4a !important;
+}
+
 .letter-color {    
     color: #674461;
     font-family: 'Baloo Bhai', cursive;    
     font-size: 1.5rem;  
-}
-
-.btn-my-color:hover {
-    background-color: #563c4a;
-    border-color: #563c4a;
 }
 
 .form-container a {
@@ -84,7 +84,7 @@ h2 {
     font-size: 0.95rem;
 }
 
-/*home*/
+/*home e home-mapa*/
 .navbar-toggler:focus, .navbar-toggler:hover, .navbar-toggler:not(.collapsed), .offcanvas.show {
     border: none;
     outline: none;
@@ -115,12 +115,17 @@ header {
     margin-top: 2rem;
 }
 
-.input-group{
+.input-group {
     margin-top: 0.75rem;
 }
 
 .list-group {
     margin-top: 0.75rem;
+}
+
+.list-link {
+    text-decoration: none;
+    color: #000;
 }
 
 h3 {
@@ -140,10 +145,35 @@ h3 {
     border-radius: 5px;
 }
 
-.btn {
-    display: inline-block;
+.bi-hand-thumbs-up-fill, .bi-car-front-fill {
+    margin-right: 10px;
 }
 
-i {
-    margin-right: 15px;
+/*travels-record page, FAQ page*/
+.btn-my-color-yellow {
+    background-color: #fedf00;
+    border-color: #fedf00;
+    min-width: 60vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #4C2F47;
+    font-size: 1rem;
+}
+
+.btn-my-color-yellow:hover, .btn-my-color-yellow:active{
+    background-color: #d6bd01 !important;
+    border-color: #d6bd01 !important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #4C2F47;
+    font-size: 1rem;
+}
+
+.list-group li{
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.faq-response-text{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #4C2F47;
+    font-size: 1rem;
 }
