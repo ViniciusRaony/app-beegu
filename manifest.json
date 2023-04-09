@@ -29,10 +29,10 @@
   ],
   "icons": [
     {
-      "src": "assets/img/favicon.png"
+      "src": "assets/img/144.png"
     },
     {
-      "src": "assets/img/maskable_icon.png",
+      "src": "assets/img/196.png",
       "sizes": "196x196",
       "type": "image/png",
       "purpose": "any maskable"
