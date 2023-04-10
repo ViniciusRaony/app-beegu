@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width" , inicial-scale="1.0">
     <link rel="shortcut icon" href="./assets/img/mascote-small.png">
-    <title>FAQ-R</title>
+    <title>Solicitações</title>
 
     <!--Theme Color-->
     <meta name="theme-color" content="#fedf00" />
@@ -22,9 +22,7 @@
     <!-- Manifest -->
     <link rel="manifest" href="manifest.json">
 
-    <!--Google API-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=${GOOGLE_MAPS_API_KEY}&callback=initMap"
-    async defer></script>
+    <!--Google API-->   
     <script src="assets/js/main.js"></script>    
 
 </head>
@@ -66,7 +64,10 @@
                                 <a class="nav-link text-light" href="favorite.html">Favoritos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-light" href="history.html">Histórico</a>
+                                <a class="nav-link text-light" href="carona-history.html">Histórico de caronas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="chat-history.html">Histórico de conversas</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-light" href="help.html">Ajuda</a>
@@ -79,21 +80,79 @@
     </header>
     <!--background-->
     <div class="img-background"></div>
-
+    
+    <!--content-->
     <main class="container">
         <div class="row d-flex justify-content-center">
             <div class="col-10">
                 <div class="justify-content-md-start">
-                    <a href="help.html"><button type="button" class="btn btn-primary btn-my-color rounded-circle"><i class="bi bi-arrow-left"></i></button></a>
+                    <a href="create-carona.html"><button type="button" class="btn btn-primary btn-my-color rounded-circle"><i class="bi bi-arrow-left"></i></button></a>
                 </div>
 
-                <h3>FAQ</h3>
-                <p class="faq-response-text">
-                    Mussum Ipsum, cacilds vidis litro abertis. Quem manda na minha terra sou euzis!Quem num gosta di mim que vai caçá sua turmis!Atirei o pau no gatis, per gatis num morreus.Quem num gosta di mé, boa gentis num é.
-                </p>
+                <h3>Solicitações</h3>
+
+                <div class="card card-carona d-flex justify-content-center mt-4">
+                    <div class="card-body bg-yellow pt-3">
+                        <div class="d-flex justify-content-center">
+                            <h4>Priscilla Sena</h4>
+                            <i class="bi bi-person-fill"></i>
+                        </div>
+
+                        <ul class="list-group d-grid my-3">
+                            <li class="list-group-item rounded-pill">
+                                <a href="create-carona.html" class="d-flex justify-content-center card-link">
+                                    <i class="bi bi-hand-thumbs-up me-3"></i>
+                                    <p class="mb-0">Aprovar solicitação</p>
+                                </a>
+                            </li>
+                            <li class="list-group-item rounded-pill">
+                                <a href="create-carona.html" class="d-flex justify-content-center card-link">
+                                    <i class="bi bi-hand-thumbs-down me-3"></i>
+                                    <p class="mb-0">Recusar solicitação</p>
+                                </a>
+                            </li>
+                            <li class="list-group-item rounded-pill">
+                                <a href="chat-carona.html" class="d-flex justify-content-center card-link">
+                                    <i class="bi bi-chat me-3"></i>
+                                    <p class="mb-0">Conversar com Priscilla</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card card-carona d-flex justify-content-center my-4">
+                    <div class="card-body bg-yellow pt-3">
+                        <div class="d-flex justify-content-center">
+                            <h4>Billzão</h4>
+                            <i class="bi bi-person-fill"></i>
+                        </div>
+
+                        <ul class="list-group d-grid my-3">
+                            <li class="list-group-item rounded-pill">
+                                <a href="create-carona.html" class="d-flex justify-content-center card-link">
+                                    <i class="bi bi-hand-thumbs-up me-3"></i>
+                                    <p class="mb-0">Aprovar solicitação</p>
+                                </a>
+                            </li>
+                            <li class="list-group-item rounded-pill">
+                                <a href="create-carona.html" class="d-flex justify-content-center card-link">
+                                    <i class="bi bi-hand-thumbs-down me-3"></i>
+                                    <p class="mb-0">Recusar solicitação</p>
+                                </a>
+                            </li>
+                            <li class="list-group-item rounded-pill">
+                                <a href="chat-carona.html" class="d-flex justify-content-center card-link">
+                                    <i class="bi bi-chat me-3"></i>
+                                    <p class="mb-0">Conversar com Billzão</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
             </div>
-        </div>
+        </div>   
     </main>
 </body>
 
