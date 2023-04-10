@@ -33,15 +33,16 @@ body {
     border-color: #674461;
 }
 
-.btn-my-color:hover, .btn-my-color:active {
+.btn-my-color:hover,
+.btn-my-color:active {
     background-color: #563c4a !important;
     border-color: #563c4a !important;
 }
 
-.letter-color {    
+.letter-color {
     color: #674461;
-    font-family: 'Baloo Bhai', cursive;    
-    font-size: 1.5rem;  
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 1.5rem;
 }
 
 .form-container a {
@@ -78,14 +79,18 @@ h2 {
     font-size: 1.25rem;
 }
 
-.form-check-input, .form-check-label {
+.form-check-input,
+.form-check-label {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #4C2F47;
     font-size: 0.95rem;
 }
 
 /*home e home-mapa*/
-.navbar-toggler:focus, .navbar-toggler:hover, .navbar-toggler:not(.collapsed), .offcanvas.show {
+.navbar-toggler:focus,
+.navbar-toggler:hover,
+.navbar-toggler:not(.collapsed),
+.offcanvas.show {
     border: none;
     outline: none;
     box-shadow: none;
@@ -98,7 +103,7 @@ h2 {
 header {
     min-height: 5rem;
 }
-  
+
 .bg-white {
     background-color: #fff;
     display: 100vh;
@@ -123,11 +128,6 @@ header {
     margin-top: 0.75rem;
 }
 
-.list-link {
-    text-decoration: none;
-    color: #000;
-}
-
 h3 {
     font-family: 'Baloo Bhai', cursive;
     color: #4C2F47;
@@ -145,11 +145,12 @@ h3 {
     border-radius: 5px;
 }
 
-.bi-hand-thumbs-up-fill, .bi-car-front-fill {
-    margin-right: 10px;
+.bi-hand-thumbs-up-fill,
+.bi-car-front-fill {
+    margin: 0 10px 0 10px;
 }
 
-/*travels-record page, FAQ page*/
+/*history, help e faq*/
 .btn-my-color-yellow {
     background-color: #fedf00;
     border-color: #fedf00;
@@ -159,7 +160,8 @@ h3 {
     font-size: 1rem;
 }
 
-.btn-my-color-yellow:hover, .btn-my-color-yellow:active{
+.btn-my-color-yellow:hover,
+.btn-my-color-yellow:active {
     background-color: #d6bd01 !important;
     border-color: #d6bd01 !important;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -167,13 +169,82 @@ h3 {
     font-size: 1rem;
 }
 
-.list-group li{
+.list-group li {
     list-style: none;
     margin-top: 1rem;
 }
 
-.faq-response-text{
+.faq-response-text {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #4C2F47;
-    font-size: 1rem;
+    font-size: 1rem;
+}
+
+/*caronas-abertas, carona-detalhes*/
+.card-link, .list-link {
+    text-decoration: none;
+    color: #4C2F47;
+}
+
+.car-color {
+    color: #4C2F47;
+}
+
+.rm-border{
+    border: none;
+}
+
+.estrelas input[type=radio] {
+    display: none;
+}
+
+.estrelas label i.fa {
+    font-size: 2.5em
+}
+
+.estrelas label i.fa:before {
+    content: '\f005';
+    color: #674461;
+}
+
+.estrelas input[type=radio]:checked~label i.fa:before {
+    color: #ccc;
+}
+
+/*chat-history*/
+.bi-person-fill {
+    margin-left: 20px;
+}
+
+.message-call {
+    display: flex;
+    justify-content: center;
+    background-color: #fedf00;
+    border: 0;
+}
+
+.mc-purple {
+    background-color: #563c4a;
+    color: #fff;
+}
+
+.form-control {
+    border: 1px solid #4C2F47;
+}
+
+/*detail-carona-motorista*/
+.create-carona-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #4C2F47;
+    font-size: 1rem;
+}
+
+.card-carona {
+    border: 1px solid #fedf00;
+    border-radius: 5px;
+}
+
+h4 {
+    font-family: 'Baloo Bhai', cursive;
+    color: #4C2F47;
 }

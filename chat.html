@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width" , inicial-scale="1.0">
     <link rel="shortcut icon" href="./assets/img/mascote-small.png">
-    <title>Home</title>
+    <title>Conversa</title>
 
     <!--Theme Color-->
     <meta name="theme-color" content="#fedf00"/>
@@ -87,21 +87,52 @@
     <main class="container">
         <div class="row d-flex justify-content-center">
             <div class="col-10">
-                <!--Tela 1-->
-                <label class="destino-label" for="destino">Para onde estou indo?</label>
-                <div class="input-group no-wrap">
-                    <input id="destino" type="text" class="form-control rounded-pill" placeholder="Insira um destino"
-                        aria-label="Destino" aria-describedby="addon-wrapping">
-                    <span class="btn rounded-pill" id="addon-wrapping"><i class="bi bi-search"></i>
+                <div class="justify-content-md-start">
+                    <a href="chat-history.html"><button type="button" class="btn btn-primary btn-my-color rounded-circle"><i class="bi bi-arrow-left"></i></button></a>
                 </div>
 
-                <h3>Destinos favoritos</h3>
+                <h3>Conversa com Cesão</h3>
 
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item bg-transparent text-center"><a class="list-link" href="home-mapa.html">Destino 1</a></li>
-                    <li class="list-group-item bg-transparent text-center"><a class="list-link" href="home-mapa.html">Destino 2</a></li>
-                    <li class="list-group-item bg-transparent text-center"><a class="list-link" href="home-mapa.html">Destino 3</a></li>
-                </ul>
+                <div class="chat">
+                    <ul class="list-group list-group-flush">
+                        <li>
+                            <div class="card rounded-pill message-call col-9 d-flex ms-auto">
+                                <div class="card-body">
+                                    e aew man, tô aqui embaixo já...
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card rounded-pill message-call mc-purple col-9 d-flex me-auto">
+                                <div class="card-body">
+                                    blz, saí da aula agr e tô descendo
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card rounded-pill message-call col-9 d-flex ms-auto">
+                                <div class="card-body">
+                                    dá pra eu passar na Shirley antes? é rapidinho
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card rounded-pill message-call mc-purple col-9 d-flex me-auto">
+                                <div class="card-body">
+                                    pega uma tapioca pra mim
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="input-group no-wrap sticky-md-bottom my-5">
+                        <input id="text-chat" type="text" class="form-control rounded-pill" placeholder="Enviar mensagem"
+                            aria-label="text-chat" aria-describedby="addon-wrapping">
+                        <span class="btn rounded-pill" id="addon-wrapping"><i class="bi bi-send"></i>
+                    </div>
+
+                </div>
+
             </div>
         </div>
     </main>

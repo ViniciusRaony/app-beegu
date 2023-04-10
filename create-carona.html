@@ -23,8 +23,6 @@
     <link rel="manifest" href="manifest.json">
 
     <!--Google API-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=${GOOGLE_MAPS_API_KEY}&callback=initMap"
-    async defer></script>
     <script src="assets/js/main.js"></script>    
 
 </head>
@@ -66,7 +64,10 @@
                                 <a class="nav-link text-light" href="favorite.html">Favoritos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-light" href="history.html">Histórico</a>
+                                <a class="nav-link text-light" href="carona-history.html">Histórico de caronas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="chat-history.html">Histórico de conversas</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-light" href="help.html">Ajuda</a>
@@ -79,20 +80,74 @@
     </header>
     <!--background-->
     <div class="img-background"></div>
-
+    <!--content-->
     <main class="container">
         <div class="row d-flex justify-content-center">
             <div class="col-10">
                 <div class="justify-content-md-start">
-                    <a href="home.html"><button type="button" class="btn btn-primary btn-my-color rounded-circle"><i class="bi bi-arrow-left"></i></button></a>
+                    <a href="home-mapa.html"><button type="button" class="btn btn-primary btn-my-color rounded-circle"><i class="bi bi-arrow-left"></i></button></a>
                 </div>
 
-                <h3>Histórico de viagens</h3>
-                <ul class="list-group list-group-flush">
-                    <li class="bg-transparent text-center"> <a href="#"> <button type="button" class="btn btn-primary btn-my-color-yellow rounded-pill">Destino 1 - 01/jan/2023</button> </a></li>
-                    <li class="bg-transparent text-center"> <a href="#"> <button type="button" class="btn btn-primary btn-my-color-yellow rounded-pill">Destino 2 - 02/fev/2023</button> </a></li>
-                    <li class="bg-transparent text-center"> <a href="#"> <button type="button" class="btn btn-primary btn-my-color-yellow rounded-pill">Destino 3 - 03/mar/2023</button> </a></li>
-                </ul>
+                <!--Card detalhes carona-->
+                <h3>Criar carona</h3>
+
+                <div class="card card-carona d-flex justify-content-center mt-4">
+                    <div class="card-body bg-yellow pt-3">
+                        <h5 class="d-flex align-items-center create-carona-text"><b>CARONA ID: 1</b></h5>             
+                                            
+                        <label for="horario" class="create-carona-text mt-3">Horário de início</label>
+                        <input type="time" class="form-select col-6 rounded-pill">
+                        <!--
+                        <select class="form-select col-6 rounded-pill" id="horario">
+                            <option selected>-</option>
+                            <script>
+                                for (var i = 0; i < 24; i++) {
+                                    for (var j = 0; j < 60; j += 10) {
+                                        var hora = i < 10 ? '0' + i : i;
+                                        var minuto = j < 10 ? '0' + j : j;
+                                        
+                                        document.write('<option value="' + hora + ':' + minuto + '">' + hora + ':' + minuto + '</option>');
+                                    }
+                                }
+                            </script>
+                        </select>
+                        -->                          
+
+                        <label for="quantidade" class="mt-3 create-carona-text">Vagas disponíveis</label>
+                        <select class="form-select col-6 rounded-pill" id="quantidade">
+                            <option selected>-</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>  
+
+                        <button type="button" class="btn btn-primary btn-my-color mt-3 float-end">Criar carona</button> 
+                                
+                    </div>
+                </div>
+                
+                <!--Lista passageiros-->
+                <h3>Passageiros</h3>
+
+                <div class="d-flex justify-content-center">
+                    <ul class="list-group list-group-flush">                  
+                        <li class="bg-transparent create-carona-text">
+                            <a href="chat-carona.html" class="card-link">
+                                <button type="button" class="btn btn-primary btn-my-color-yellow rounded-pill d-flex justify-content-between">Priscilla Sena <i class="bi bi-chat float-end"></i></button>
+                            </a>
+                        </li>
+                        <li class="bg-transparent create-carona-text">
+                            <a href="chat-carona.html" class="card-link">
+                                <button type="button" class="btn btn-primary btn-my-color-yellow rounded-pill d-flex justify-content-between">Billzão <i class="bi bi-chat float-end"></i></button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="my-5">
+                    <h4><a href="solicitacoes.html" class="card-link"><u>Ver solicitações</u></a></h4>
+                </div>
 
             </div>
         </div>
