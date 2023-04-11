@@ -18,6 +18,7 @@ Desktop.ini
 # Dependências geradas automaticamente
 package-lock.json
 yarn.lock
+.env
 
 # Arquivos e diretórios de build
 dist/

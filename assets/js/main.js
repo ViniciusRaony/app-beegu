@@ -41,3 +41,22 @@ function buscarRotas() {
       }
     });
 }
+
+// INSTALADO O DOTENV npm install dotenv
+// require('dotenv').config();
+
+const script = document.createElement('script');
+script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyDk85nEstYPj-JBpd748eoIynqlCre-8hQ&callback=initMap`;
+script.async = true;
+script.defer = true;
+
+document.head.appendChild(script);
+
+
+
+
+
+
+
+
+
