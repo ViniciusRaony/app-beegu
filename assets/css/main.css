@@ -186,7 +186,14 @@ h3 {
     color: #4C2F47;
 }
 
-.car-color {
+.list-link-big {
+    text-decoration: none;
+    color: #4C2F47;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.car-color, .user-color, .bin-color {
     color: #4C2F47;
 }
 
