@@ -41,3 +41,34 @@ function buscarRotas() {
       }
     });
 }
+
+// Campo 'Digite o endereço de início' irá puxar localização atual do usuário
+function getGeolocation() {
+  // Verifica se o navegador suporta a API Geolocation
+  if (navigator.geolocation) {
+    // Se suportado, obtem a posição do usuário
+    navigator.geolocation.getCurrentPosition(function(position) {
+      // Cria uma nova instância da API Places
+      const geocoder = new google.maps.Geocoder();
+      const latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+
+      // Converte as coordenadas em um endereço legível
+      geocoder.geocode({ 'location': latLng }, function(results, status) {
+        if (status === 'OK') {
+          document.getElementById('start').value = results[0].formatted_address;
+        } else {
+          alert('Não foi possível obter o endereço da sua localização atual.');
+        }
+      });
+    }, function() {
+      alert('Não foi possível obter a sua localização atual.');
+    });
+  } else {    
+    alert('O seu navegador não suporta a API Geolocation.');
+  }
+}
+
+// Chama a função getGeolocation() quando a página é carregada
+window.onload = function() {
+  getGeolocation();
+};
