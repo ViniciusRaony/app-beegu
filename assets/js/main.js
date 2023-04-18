@@ -44,24 +44,37 @@ function buscarRotas() {
 
 // Campo 'Digite o endereço de início' irá puxar localização atual do usuário
 function getGeolocation() {
-  // Verifica se o navegador suporta a API Geolocation
   if (navigator.geolocation) {
-    // Se suportado, obtem a posição do usuário
-    navigator.geolocation.getCurrentPosition(function(position) {
-      // Cria uma nova instância da API Places
-      const geocoder = new google.maps.Geocoder();
-      const latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+    // Verifica se a permissão já foi concedida
+    navigator.permissions.query({name:'geolocation'}).then(function(permissionStatus) {
+      if (permissionStatus.state === 'granted') {
+        navigator.geolocation.getCurrentPosition(function(position) {
+          // Código para obter o endereço a partir da posição atual
+          const geocoder = new google.maps.Geocoder();
+          const latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 
-      // Converte as coordenadas em um endereço legível
-      geocoder.geocode({ 'location': latLng }, function(results, status) {
-        if (status === 'OK') {
-          document.getElementById('start').value = results[0].formatted_address;
-        } else {
-          alert('Não foi possível obter o endereço da sua localização atual.');
-        }
-      });
-    }, function() {
-      alert('Não foi possível obter a sua localização atual.');
+          geocoder.geocode({ 'location': latLng }, function(results, status) {
+            if (status === 'OK') {
+              if (results[0]) {
+                const address = results[0].formatted_address;
+                // faça algo com o endereço, como exibir na tela ou enviar para o servidor
+              } else {
+                alert('Não foi encontrado nenhum resultado para as coordenadas informadas.');
+              }
+            } else {
+              alert('Não foi possível converter as coordenadas em um endereço legível.');
+            }
+          });
+        }, function() {
+          alert('Não foi possível obter a sua localização atual.');
+        });
+      } else if (permissionStatus.state === 'prompt') {
+        // Ainda não foi concedida permissão, exibe uma mensagem pedindo para que o usuário habilite a localização
+        alert('Por favor, habilite a sua localização para usar esta funcionalidade.');
+      } else {
+        // A permissão foi negada, exibe um campo para que o usuário insira manualmente o endereço de início
+        document.getElementById('start').disabled = false;
+      }
     });
   } else {    
     alert('O seu navegador não suporta a API Geolocation.');
@@ -72,3 +85,6 @@ function getGeolocation() {
 window.onload = function() {
   getGeolocation();
 };
+
+
+
